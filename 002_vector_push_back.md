@@ -94,4 +94,4 @@ This program will return error, as vector of references are not allowed.
 [Explanation2 on stackoverflow](https://stackoverflow.com/questions/1164266/why-are-arrays-of-references-illegal)
 
 > Answering to your question about standard I can cite the C++ Standard §8.3.2/4:
-> There shall be no references to references, no arrays of references, and no pointers to references.
+>> There shall be no references to references, no arrays of references, and no pointers to references.
