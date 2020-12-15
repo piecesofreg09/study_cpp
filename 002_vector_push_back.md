@@ -89,3 +89,4 @@ int main() {
 This program will return error, as vector of references are not allowed.
 
 [Explanation on stackoverflow](https://stackoverflow.com/questions/922360/why-cant-i-make-a-vector-of-references)
+> The component type of containers like vectors must be assignable. References are not assignable (you can only initialize them once when they are declared, and you cannot make them reference something else later). Other non-assignable types are also not allowed as components of containers, e.g. vector<const int> is not allowed.
