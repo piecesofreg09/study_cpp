@@ -1,4 +1,6 @@
-```#include <iostream>
+### 1. outer loop doesn't use reference
+```cpp
+#include <iostream>
 #include <vector>
 using namespace std;
 int main() {
@@ -33,17 +35,19 @@ int main() {
 }
 ```
 Output:
+```
 0x7ffe97313b70
 9900 9900 9900 
 0x7ffe97313b70
 10009 10009 
 -100 -100 -100 
 9 9
+```
 it can be seen that the elements in the test vector are not altered at all, even though the
 temporary variable element that was created has been altered.
-*/
 
-```
+
+```cpp
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -80,11 +84,13 @@ int main() {
 ```
 
 Output:
+```
 0x22faef0
 9900 9900 9900 
 0x22faf08
 10009 10009 
 9900 9900 9900 
 10009 10009
+```
 It can be seen that the two vectors inside the test vector has changed.
 So you have to use reference type if you want to change things.
