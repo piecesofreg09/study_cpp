@@ -43,10 +43,12 @@ Output:
 -100 -100 -100 
 9 9
 ```
-it can be seen that the elements in the test vector are not altered at all, even though the
+It can be seen that the elements in the test vector are not altered at all, even though the
 temporary variable element that was created has been altered.
 
+It can be also seen that the two temporary variables element are created at the same address.
 
+### 2. outer loop uses reference
 ```cpp
 #include <iostream>
 #include <vector>
